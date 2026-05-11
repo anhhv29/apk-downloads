@@ -1,49 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>APK Downloads</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APK Download Center</title>
+
   <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
     body{
-      font-family:Arial;
-      background:#111827;
+      background: linear-gradient(135deg,#0f172a,#111827);
       color:white;
-      padding:40px;
+      padding:30px;
+    }
+
+    h1{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:30px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+      max-width:1100px;
+      margin:auto;
     }
 
     .card{
       background:#1f2937;
       padding:20px;
-      border-radius:16px;
-      max-width:400px;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+      transition:0.3s;
     }
 
-    a{
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .icon{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .title{
+      font-size:20px;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    .btn{
       display:inline-block;
-      margin-top:16px;
+      margin-top:15px;
       background:#3b82f6;
       color:white;
-      padding:12px 18px;
+      padding:10px 16px;
       border-radius:10px;
       text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
     }
+
+    .btn:hover{
+      background:#2563eb;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:40px;
+      opacity:0.5;
+      font-size:14px;
+    }
+
   </style>
 </head>
 
 <body>
 
-<div class="card">
-  <h1>🧮 Smart Calculator</h1>
-  <a href="https://github.com/anhhv29/apk-downloads/releases/download/demo/smart_calculator.apk">
-    Download APK
-  </a>
+<h1>📱 APK Download Center</h1>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="icon">🧮</div>
+    <div class="title">Smart Calculator</div>
+    <a class="btn" href="https://github.com/anhhv29/apk-downloads/releases/download/demo/smart_calculator.apk">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">📊</div>
+    <div class="title">Habit Goals Tracker</div>
+    <a class="btn" href="https://github.com/anhhv29/apk-downloads/releases/download/demo/habit_goals.apk">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">🌊</div>
+    <div class="title">Fluid Wallpaper</div>
+    <a class="btn" href="https://github.com/anhhv29/apk-downloads/releases/download/demo/magic_fluid.apk">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">🔊</div>
+    <div class="title">Sound Simulator</div>
+    <a class="btn" href="#">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">🎨</div>
+    <div class="title">AR Draw Sketch</div>
+    <a class="btn" href="#">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">📞</div>
+    <div class="title">Color Call Phone</div>
+    <a class="btn" href="#">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">🔋</div>
+    <div class="title">Battery Charging</div>
+    <a class="btn" href="#">
+      Download APK
+    </a>
+  </div>
+
+  <div class="card">
+    <div class="icon">💬</div>
+    <div class="title">Prank Video Call & Chat</div>
+    <a class="btn" href="#">
+      Download APK
+    </a>
+  </div>
+
 </div>
 
-<div class="card">
-  <h1>🧮 Habit Goals: Habit Tracker</h1>
-  <a href="https://github.com/anhhv29/apk-downloads/releases/download/demo/habit_goals.apk">
-    Download APK
-  </a>
+<div class="footer">
+  🚀 Internal Testing APK Center • GitHub Pages
 </div>
-  
+
 </body>
 </html>
